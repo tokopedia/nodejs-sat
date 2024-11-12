@@ -74,9 +74,9 @@ export class HTTPClient {
     );
   }
 
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   public async get<T>(
     url: string,
-    /* eslint-disable  @typescript-eslint/no-explicit-any */
     ...config: AxiosRequestConfig<any>[]
   ): Promise<AxiosResponse<T>> {
     const response = this.axiosInstance.get<T>(url, ...config);
@@ -84,9 +84,9 @@ export class HTTPClient {
     return response;
   }
 
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   public async post<T>(
     url: string,
-    /* eslint-disable  @typescript-eslint/no-explicit-any */
     data: any,
     signature?: string,
   ): Promise<AxiosResponse<T>> {

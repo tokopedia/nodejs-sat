@@ -10,10 +10,12 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "api", "client", "signatures", "index.ts"
+    "api",
+    "client",
+    "signatures",
+    "index.ts"
   ],
   "exclude": [
     "node_modules",
-    "**/*.test.ts"
   ]
 }
